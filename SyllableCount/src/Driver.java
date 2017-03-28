@@ -4,8 +4,8 @@ public class Driver {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Word word = new Word("/CHANGE/DIRECTORY/TO/ACCESS/data/input.txt");	
-		WriteToFile newfile = new WriteToFile("/CHANGE/DIRECTORY/TO/ACCESS/data/output.txt");
+		Word word = new Word("data/input.txt");	
+		WriteToFile newfile = new WriteToFile("data/output.txt");
 		if (isHaiku(word))
 			newfile.writeContent("true");
 		else 
